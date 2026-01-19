@@ -1,0 +1,6 @@
+/* Oculta la fila de Shorts en la página de inicio */
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+ytd-reel-shelf-renderer, 
+ytd-rich-shelf-renderer[is-shorts] {
+    display: none !important;
+}
