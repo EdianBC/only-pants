@@ -9,7 +9,7 @@
     "128": "icon128.png"},
     "content_scripts": [
       {
-        "matches": ["https://www.youtube.com/"],
+        "matches": ["https://*.youtube.com/*"],
         "css": ["styles.css"]
       }
     ]

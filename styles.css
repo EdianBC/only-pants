@@ -1,6 +1,22 @@
-/* Oculta la fila de Shorts en la página de inicio */
+/* 1. Oculta la fila de Shorts en la página de inicio */
 ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
-ytd-reel-shelf-renderer, 
 ytd-rich-shelf-renderer[is-shorts] {
     display: none !important;
 }
+
+/* 2. Oculta la sección de Shorts en la barra lateral (sugerencias) */
+ytd-reel-shelf-renderer {
+    display: none !important;
+}
+
+/* 3. Oculta el botón de "Shorts" en el menú lateral izquierdo */
+ytd-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-mini-guide-entry-renderer[aria-label="Shorts"] {
+    display: none !important;
+}
+ 
+/* 4. Oculta Shorts en los resultados de búsqueda */
+/* ytd-video-renderer:has(a[href*="/shorts/"]),
+ytd-reel-item-renderer {
+    display: none !important;
+}  */
